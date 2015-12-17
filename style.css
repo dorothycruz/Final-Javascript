@@ -1,0 +1,95 @@
+body {
+  animation-name: bg;
+  animation: 4s;
+  animation-name: color;
+  background-color: #ffba33;
+  text-align: center;
+  background: linear-gradient(to right, #ffba33 50%, #00e6ac 50%);
+  background-size: 200% 100%;
+  margin-left:10px;
+  /*transition time*/
+  transition: all 15s ease;
+}
+
+.colorbg    {
+  background-position:right bottom;
+  }
+
+.colorbg2 {
+  background-position:left bottom;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+/*text*/
+
+@keyframes color {
+  from {
+    background-color: #ffffff;
+  }
+
+  to {
+    background-color: #ffba33;
+  }
+}
+
+
+.none {
+  display: none;
+}
+
+
+p.description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 170px;
+  color: #f2f2f2;
+  animation-name: size;
+  animation-duration: 5s;
+  text-transform: uppercase;
+}
+
+@keyframes size {
+  from {
+    margin-top: 400px;
+    font-size: 3em;
+    color: #ffba33;
+  }
+
+  to {
+    margin-top: 170px;
+    font-size: 1.5em;
+    color: #f2f2f2;
+  }
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  width: 1000px;
+}
+
+/*images*/
+
+img {
+  width: auto;
+  height: 350px;
+}
+
+p.small {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+/*audio*/
+
+span {
+  color: #ff4d4d;
+}
